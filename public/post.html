@@ -2,11 +2,66 @@
 <html>
   <head>
     <meta charset="UTF-8">
+<style>
+#thumb-bar {
+	bottom: 0px;
+	background-color: #ffffff;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+#message-input-box {
+	border-color: #0069ff;
+	border-radius: 32px;
+	border-style: solid;
+	border-width: 2px;
+	display: inline-block;
+	font-size: 16px;
+	font-family: Tahoma, Verdana, sans-serif;
+	outline: 0px solid transparent;
+	overflow-y: auto;
+	min-height: 32px;
+	max-height: 32px;
+	padding: 16px;
+	text-align: left;
+	width: 60%;
+}
+
+#send-message-button {
+	border-color: #0069ff;
+	border-radius: 32px;
+	border-style: solid;
+	border-width: 2px;
+	color: #0069ff;
+	display: inline-block;
+	font-size: 16px;
+	font-family: Tahoma, Verdana, sans-serif;
+	outline: 0px solid transparent;
+	overflow-y: auto;
+	min-height: 32px;
+	max-height: 32px;
+	text-align: center;
+	padding: 16px;
+	width: 10%;
+}
+
+#send-text {
+	vertical-align: middle;
+
+}
+
+</style>
     <title>Title of the document</title>
     <script src="jquery-3.2.1.js"></script>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   </head>
 
   <body>
-    <div id="test"></div>
+    <div id="thumb-bar">
+      <span contenteditable="true" id="message-input-box">hello, world</span>
+      <span id="send-message-button">send</span>
+      <span id="send-message-button">send</span>
+    </div>
   </body>
 </html>
